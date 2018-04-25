@@ -6,12 +6,12 @@ public class Book implements Serializable {
 
     private String title;
     private String author;
-    private Integer isbn;
+    private String isbn13;
 
-    public Book(String title, String author, Integer isbn) {
+    public Book(String title, String author, String isbn13) {
         this.title = title;
         this.author = author;
-        this.isbn = isbn;
+        this.isbn13 = isbn13;
     }
 
     public String getTitle() {
@@ -22,7 +22,7 @@ public class Book implements Serializable {
         return author;
     }
 
-    public Integer getIsbn() {
-        return isbn;
+    public String getIsbn() {
+        return isbn13;
     }
 }
