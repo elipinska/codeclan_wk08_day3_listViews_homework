@@ -1,5 +1,6 @@
 package com.example.ewa.booklist;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,5 +29,9 @@ public class BookListActivity extends AppCompatActivity {
     public void onReadingListItemClicked(View listItem) {
         Book book = (Book) listItem.getTag();
         Log.d("Book title: ", book.getTitle());
+
+        Intent intent = new Intent(this, BookDetailsActivity.class);
+        intent.putExtra("book", book);
+        startActivity(intent);
     }
 }
