@@ -13,6 +13,8 @@ public class ReadingList {
         readingList.add(new Book("Piled Higher and Deeper", "Jorge Cham", "9780972169509"));
         readingList.add(new Book("Portugal", "Cyril Pedrosa", "9782800148137"));
         readingList.add(new Book("The Living Mountain", "Nan Shepherd", "9781847674241"));
+        readingList.add(new Book("Hatchet Job", "Mark Kermode", "9781447230533"));
+        readingList.add(new Book("The Man in the High Castle", "Philip K. Dick", "9780241246108"));
     }
 
     public ArrayList<Book> getReadingList() {
